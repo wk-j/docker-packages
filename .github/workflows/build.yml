@@ -12,7 +12,7 @@ jobs:
         with:
           image: wearetherock/my-web
           # tag: latest
-          registry: docker.io
+          registry: docker.pkg.github.com
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USER}}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          password: ${{ secrets.GITHUB_TOKEN }}

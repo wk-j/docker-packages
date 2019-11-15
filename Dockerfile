@@ -16,8 +16,6 @@ FROM mcr.microsoft.com/dotnet/core-nightly/runtime:3.0.0 AS runtime
 
 ENV DOTNET_USE_POLLING_FILE_WATCHER=true
 
-# ENV PORT=443
-# ENV ASPNETCORE_URL=https://+:${PORT}
 # ENV Kestrel__Certificates__Default__Path=/app/Cert/cert-aspnetcore.pfx
 # ENV Kestrel__Certificates__Default__Password=1234
 

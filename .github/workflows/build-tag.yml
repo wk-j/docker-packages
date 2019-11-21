@@ -13,7 +13,7 @@ jobs:
 
       - uses: mr-smithers-excellent/docker-build-push@v1.0
         with:
-          image: wk-j/my-web
+          image: docker-packages/my-web
           # tag: latest
           registry: docker.pkg.github.com
           dockerfile: Dockerfile

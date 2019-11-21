@@ -1,0 +1,21 @@
+name: Build2
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1.0
+
+      - uses: mr-smithers-excellent/docker-build-push@v1.0
+        with:
+          image: wk-j/my-web
+          # tag: latest
+          registry: docker.pkg.github.com
+          dockerfile: Dockerfile
+          username: wk-j
+          password: ${{ secrets.DOCKER_PASSWORD }}

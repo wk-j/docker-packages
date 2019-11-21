@@ -18,4 +18,4 @@ jobs:
           registry: docker.pkg.github.com
           dockerfile: Dockerfile
           username: wk-j
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          password: ${{ secrets.GITHUB_TOKEN }}

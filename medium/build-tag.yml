@@ -13,8 +13,8 @@ jobs:
 
       - uses: mr-smithers-excellent/docker-build-push@v1.0
         with:
-          image: wk-j/docker-packages/my-web
+          image: :Account/:Repository/:ImageName
           registry: docker.pkg.github.com
           dockerfile: Dockerfile
-          username: wk-j
+          username: :Account
           password: ${{ secrets.GITHUB_TOKEN }}
